@@ -1,0 +1,429 @@
+/*===================================================
+
+  Universal Styling
+
+*===================================================*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "GothamBook", sans-serif;
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: url('../font/GothamBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url('../font/GothamBook.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "Capetown";
+  src: url('../font/Capetown.otf') format('opentype')
+}
+/*========================
+
+  Header Styling
+
+*==========================*/
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  text-shadow: 2px 2px #1c344c6b;
+  font-family: GothamBold, sans-serif;
+  line-height: 24px;
+  color: #F3C766;
+  padding: 5px;
+  border-radius: 5px 5px;
+  border-top: 10px gray;
+}
+
+header{
+  text-align: center;
+  background: #398298;
+  padding: 25px 0;
+  position:fixed;
+  margin: 0 0 0 0;
+  width: 100%;
+  z-index: 999;
+  border-style: solid;
+  border-width: 50px 0 0 0;
+  border-color: #A4B2BC;
+}
+
+.logo-image{
+  position: absolute;
+  margin: -80px 20px;
+}
+/*===============================
+
+  Body Styling
+
+*===============================*/
+h1{
+  text-align: center;
+  font-family: GothamBold, sans-serif;
+  font-size: 52px;
+  margin: 30px;
+  color: #1C344C;
+}
+
+h2{
+  text-align: center;
+  font-family: GothamBold, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30px 0 5 0;
+  color: #1C344C;
+}
+
+h3{
+  text-align: center;
+  font-family: Capetown, serif;
+  font-size: 26px;
+  line-height: 24px;
+  padding: 0 0 20px 30px;
+  color: #F27360;
+  text-shadow: 1px 1px #1c344c6b;
+}
+
+h4 {
+  font-family: GothamBold, sans-serif;
+  padding: 10px 0 0 10px;
+}
+
+h5 {
+  font-family: GothamBook,sans-serif;
+  font-size: 9px;
+  line-height: 10px;
+  padding: 1px 10px 10px 10px;
+}
+
+p{
+  font-size: 12px;
+  line-height: 14px;
+  font-family: GothamBook, sans-serif;
+}
+
+
+body {
+  background:#A4B2BC;
+}
+
+figcaption{
+  color: #1C344C;
+}
+/*===============================
+
+  Footer Styling
+
+*===============================*/
+footer{
+  background: #398298;
+  color: #1c344c;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.moving_logo{
+  position: absolute;
+  left: 0;
+  animation: moving 10s forwards infinite linear;
+}
+
+@keyframes moving {
+  from{
+    transform: translatex(-20px);
+  }
+  to{
+    transform: translate(1000px)
+  }
+}
+/*============================================================
+
+  Index Styling
+
+*=========================================================*/
+main {
+  padding-top: 200px;
+  margin: auto 0;
+  max-width: 900px;
+}
+/*===============================
+
+  Hero Styling
+
+*===============================*/
+.top_main{
+  position: relative;
+  max-width: 900px;
+  margin: auto 0;
+}
+
+.index_hero{
+  display:block;
+  margin: auto;
+}
+
+.index_copy{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 40px;
+  padding: 20px;
+  background: white;
+  width: 700px;
+  margin: 50px 75px;
+  position: absolute;
+  display: block;
+}
+
+/*===============================
+
+  Bottom Styling
+
+*===============================*/
+.bottom_main{
+  position: relative;
+  margin-top: 200px;
+  margin-left: 75px;
+  max-width: 81%;
+  text-align: center;
+}
+
+.bottom_texts{
+  display: block;
+  max-width: 900px;
+  margin: auto 0;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.bottom_text{
+  display:inline-block;
+  width:18%;
+  background: white;
+  padding: 15px;
+  margin: 20px;
+  position: relative;
+}
+
+.bottom_images{
+  position:relative;
+  padding-top: 40px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.bottom_image{
+  padding: 0 25px;
+  max-width: 21%;
+  width: 100%;
+}
+/*============================================================
+
+  About Styling
+
+*=========================================================*/
+.about_main{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+
+.about_toptext{
+  display: inline-block;
+  width: 300px;
+  background: white;
+  padding: 20px 20px 20px 100px;
+  position: absolute;
+  margin: 60px 0 30px -100px;
+}
+
+.about_middletext{
+  display: inline-block;
+  width: 300px;
+  background: white;
+  padding: 20px 100px 20px 20px;
+  position: absolute;
+  margin: 60px -100px 30px 0;
+  text-align: right;
+}
+
+.about_bottomtext{
+  display: inline-block;
+  width: 300px;
+  background: white;
+  padding: 20px 20px 20px 100px;
+  position: absolute;
+  margin: 140px 0 30px -100px;
+  }
+
+.about_topimage {
+position:relative;
+  padding-top: 40px;
+  max-width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 50;
+  margin-bottom: 30px;
+}
+
+.about_middleimage{
+  padding-top: 40px;
+  max-width: 40%;
+  margin: auto;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 500;
+  position:relative;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+.about_bottomimage {
+position:relative;
+  padding-top: 40px;
+  max-width: 40%;
+  margin: auto;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 50;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+/*============================================================
+
+  History Styling
+
+*=========================================================*/
+.gallery{
+  position: relative;
+  margin: 30px 30px 30px 80px;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+  max-width: 900px;
+}
+
+.history_text{
+  display: inline-block;
+  width: 275px;
+  background: white;
+  padding: 15px;
+  margin: 20px;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  height: 65px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1C344C;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1{
+  color: #e5d8f0;
+  font-family: 'GothamBook', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  position: absolute;
+  padding: 10px;
+  top: 33px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 300px;
+  height: 60px;
+}
+
+
+section.gallery img {
+  width: 300px;
+}
+/*============================================================
+
+  Registration Styling
+
+*=========================================================*/
+
+h1{
+  text-align: center;
+}
+
+.registration_container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #1c344c;
+  line-height: 14px;
+}
+
+.contact-form {
+  background: #398298;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 5px;
+    color: #1c344c;
+    font-family: sans-serif;
+    margin: 20px auto;
+}
+
+.input-selection{
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  display: block;
+  line-height: 14px;
+  margin-top: 20px;
+}
+.registration_question {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+.h3_fontchange {
+  text-align: left;
+}
+input {
+  padding: 15px 10px;
+  border-radius: 3px;
+  font-family: GothamBook;
+  font-size: 12px;
+  line-height: 12px;
+}
+textarea {
+  padding: 50px 10px;
+  border-radius: 3px;
+}
+
+.submit input {
+  background: #1c344c;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  line-height: 12px;
+}
